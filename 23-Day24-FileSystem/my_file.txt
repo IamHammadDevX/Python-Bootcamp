@@ -1,0 +1,3 @@
+Magically Writen by python
+Wow hello world
+File changes or tempered!
