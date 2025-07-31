@@ -1,11 +1,12 @@
 import requests # pyright: ignore[reportMissingModuleSource]
 import smtplib
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # --- Weather API Setup ---
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "18f282a7433c98e212108a590075c67d"
+api_key = os.getenv("API_KEY")
 
 weather_params = {
     "lat": 31.9744,
