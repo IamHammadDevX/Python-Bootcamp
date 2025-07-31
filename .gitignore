@@ -29,6 +29,7 @@ var/
 *.whl
 
 # Virtual environments
+.env
 venv/
 env/
 .venv/
