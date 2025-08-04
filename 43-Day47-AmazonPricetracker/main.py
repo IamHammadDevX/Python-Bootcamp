@@ -1,5 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
+import requests # type: ignore
+from bs4 import BeautifulSoup # type: ignore
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
