@@ -1,4 +1,3 @@
-from selenium import *
 from selenium import webdriver  # type: ignore
 from selenium.webdriver.chrome.service import Service  # pyright: ignore[reportMissingImports] # ✅ Required for Selenium 4+
 from selenium.webdriver.common.by import By
@@ -10,17 +9,38 @@ service = Service(executable_path=chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 
 driver.get("https://www.python.org")
-search = driver.find_element(By.NAME, "q")
-# print(search.tag_name)
-# print(search.get_attribute("placeholder"))
-logo = driver.find_element(By.CLASS_NAME, "python-logo")
-# print(logo.size)
+# search = driver.find_element(By.NAME, "q")
+# # print(search.tag_name)
+# # print(search.get_attribute("placeholder"))
+# logo = driver.find_element(By.CLASS_NAME, "python-logo")
+# # print(logo.size)
 
-documentation = driver.find_element(By.CSS_SELECTOR, ".documentation-widget a")
-# print(documentation.text)
+# documentation = driver.find_element(By.CSS_SELECTOR, ".documentation-widget a")
+# # print(documentation.text)
 
-system_link = driver.find_element(By.XPATH, '//*[@id="site-map"]/div[2]/div/ul/li[4]/a')
-print(system_link.text)
+# system_link = driver.find_element(By.XPATH, '//*[@id="site-map"]/div[2]/div/ul/li[4]/a')
+# print(system_link.text)
+
+# Solution # 1
+event_times = driver.find_elements(By.CSS_SELECTOR, ".event-widget time")
+# for time in event_times:
+#     print(time.text)
+event_names = driver.find_elements(By.CSS_SELECTOR, ".event-widget li a")
+# for name in event_names:
+#     print(name.text)
+
+events = {}
+
+for n in range(len(event_times)):
+    events[n] = {
+        "time": event_times[n].text,
+        "name": event_names[n].text
+    }
+
+print({key:value for (key,value) in events.items()})
+
+
+
 
 # driver.close() # only close one tab
 driver.quit()   # close the all tabs and app
