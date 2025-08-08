@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask # type: ignore
 
 app = Flask(__name__)
 
@@ -7,7 +7,9 @@ print(__name__)
 
 @app.route("/")
 def say_hello():
-    return "Hello, Backend World!"
+    return '<h1 style="text-align: center">Hello, Backend World!</h1>'\
+            '<p>Hello buddy, its backend</p>' \
+            '<img src="Day54-Backend-Flask\pic.jpg" alt="image goes here" >'
 
 @app.route("/bye")
 def say_bye():
