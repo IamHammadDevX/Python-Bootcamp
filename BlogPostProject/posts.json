@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "My First Blog Post",
+        "subtitle": "Learning Flask",
+        "body": "Flask is a lightweight WSGI web application framework in Python. It's easy to learn and great for beginners."
+    },
+    {
+        "id": 2,
+        "title": "Another Post",
+        "subtitle": "About APIs",
+        "body": "APIs allow applications to communicate with each other, making data integration and automation possible."
+    },
+    {
+        "id": 3,
+        "title": "Python Tips",
+        "subtitle": "Make Your Code Cleaner",
+        "body": "Use list comprehensions, f-strings, and functions to keep your code readable and concise."
+    },
+    {
+        "id": 4,
+        "title": "Web Development Basics",
+        "subtitle": "HTML, CSS, and JavaScript",
+        "body": "HTML structures the page, CSS styles it, and JavaScript makes it interactive."
+    },
+    {
+        "id": 5,
+        "title": "Databases 101",
+        "subtitle": "SQL and NoSQL",
+        "body": "SQL databases are structured and use tables. NoSQL databases are flexible and store unstructured data."
+    },
+    {
+        "id": 6,
+        "title": "Debugging Like a Pro",
+        "subtitle": "Find and Fix Bugs",
+        "body": "Use print statements, logging, and debuggers like pdb to troubleshoot your Python programs."
+    },
+    {
+        "id": 7,
+        "title": "REST API Basics",
+        "subtitle": "HTTP Methods Explained",
+        "body": "GET retrieves data, POST creates new data, PUT updates data, and DELETE removes data."
+    },
+    {
+        "id": 8,
+        "title": "Version Control",
+        "subtitle": "Why Git is Essential",
+        "body": "Git tracks changes to your code and allows you to collaborate with others without overwriting work."
+    },
+    {
+        "id": 9,
+        "title": "Docker for Beginners",
+        "subtitle": "Containerize Your Apps",
+        "body": "Docker packages your application and dependencies into a container so it runs anywhere."
+    },
+    {
+        "id": 10,
+        "title": "Deploying to the Web",
+        "subtitle": "From Local to Live",
+        "body": "Services like Heroku, Render, and Railway make it easy to host your Python web applications."
+    }
+]
